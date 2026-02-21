@@ -1,0 +1,706 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "Segoe UI", system-ui, sans-serif;
+  }
+
+.container-fluid{
+    width: 100%;
+    max-height: 20%;
+    background-color: black;
+    padding: 10px 16px;
+    transition: transform 0.3;
+    text-decoration: none;
+    color: none;
+}
+
+.container-fluid:hover{
+    background-color:  #ff9800;
+    color:  black;
+    border-radius: 5px;
+    transition: 0.8s;
+    transition-delay: .3s;
+    border-radius: 3px;
+}
+
+.ul-navbar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -68px;
+}
+
+.li-navbar{
+    padding: 15px 25px;
+    color: black;
+    list-style-type: none;
+    font-size: 17px;
+    margin-left: 45px
+}
+
+
+
+.navtext-style{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.container-CONTENT1{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.IMAGE, .IMAGE2{
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 2);
+    transition: transform 0.6 ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container-footer{
+  width: 68%;
+  height: 80%;
+  margin: 40px auto;
+  text-align: center;
+  font-size: larger;
+  background-color: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 2);
+  border-radius: 15px;
+  line-height: 1.8;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  outline-style: groove;
+  outline-color: black;
+  outline-width: thin;
+}
+
+.container-footer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 23px rgba(0,0,0,0.25);
+}
+
+.container-footer h2 {
+  margin-bottom: 14px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 26px; 
+    color: black;
+    list-style-type: none;
+    margin: 5px;
+}
+
+.container-fluid:hover .navbar-brand {
+  color: white;
+  transition: 0.8s;
+  transition-delay: .3s;
+}
+
+.container-TOCM {
+  width: 380px;
+  margin: 30px auto;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  outline-style: solid;
+  outline-color: black;
+  outline-width: thin;
+}
+
+
+.containerk-toc{
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: 380;
+    font-style: italic;
+    list-style: none;
+    margin-top: 6px;
+}
+
+.font-HeadToc{
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+summary{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.container-quiz{
+    margin: 40px ;
+    text-align: center;
+    padding: 0px 15px;
+    font-size: large;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 2);
+    border-radius: 23px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    height: 200px;
+}
+
+/* for button to start quiz. */
+.btn-2,
+.btn-2 *,
+.btn-2 :after,
+.btn-2 :before,
+.btn-2:after,
+.btn-2:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-2:disabled {
+  cursor: default;
+}
+.btn-2:-moz-focusring {
+  outline: auto;
+}
+.btn-2 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-2 [hidden] {
+  display: none;
+}
+.btn-2 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-2 span {
+  mix-blend-mode: difference;
+}
+.btn-2:before {
+  background: #fff;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateX(var(--progress, -100%));
+  transition: transform 0.2s ease;
+}
+.btn-2:hover:before {
+  --progress: 0;
+}
+
+.btn-2{
+    margin-top: 50px;
+}
+
+.container-b{
+    margin-top: 40px;
+}
+
+.container-text {
+  font-size: 16px;
+  font-weight: 420;
+}
+
+/* for the box prolly for question ig? */
+.box{
+  width: 300px;
+  height: 200px;
+  margin: 50px auto;
+  background-color: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 
+.question-approaching{
+  box-shadow: -6px 8px 13px -8px rgba(0,0,0,0.8);
+  -webkit-box-shadow: -6px 8px 13px -8px rgba(0,0,0,0.8);
+  -moz-box-shadow: -6px 8px 13px -8px rgba(0,0,0,0.8);
+  height: 380px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+} */
+
+
+/* for button correct of quest.html (first question) */
+.btn-65,
+.btn-65 *,
+.btn-65 :after,
+.btn-65 :before,
+.btn-65:after,
+.btn-65:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-65 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-65:disabled {
+  cursor: default;
+}
+.btn-65:-moz-focusring {
+  outline: auto;
+}
+.btn-65 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-65 [hidden] {
+  display: none;
+}
+.btn-65 {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 13px 36px;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-65:hover {
+  -webkit-animation: flash 0.8s;
+  animation: flash 0.8s;
+}
+@-webkit-keyframes flash {
+  0%,
+  50%,
+  to {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes flash {
+  0%,
+  50%,
+  to {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+/* for block of the container quest quiz!*/
+.positionb-q1{
+  justify-content: center;
+  display: flex
+}
+
+.container-questquiz{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 180px;
+  margin-left: 300px;
+  height: 320px;
+  width: 480px;
+  -webkit-box-shadow: 5px 7px 17px -4px #3B3B3B; 
+  box-shadow: 5px 7px 17px -4px #4d4b3b;
+  background-color: #ff9800;
+  border-radius: 22px;
+  margin-left: 275px;
+  position: relative;
+  padding-top: 60px;
+} 
+
+.btn-65{
+  gap: 12px;
+   
+
+
+
+  
+  /* margin-bottom: 18px; */
+  
+}
+
+/* .container-questhtml{
+  /* overflow-y: hidden; */
+
+
+.footer-q1{
+  margin-top: 20px;
+}
+
+.footer-mq1{
+  margin-top: 10px;
+}
+
+.container-footerabout {
+    width: 60%;
+    max-width: 800;
+    padding: 20px; 
+    margin: 40px auto;
+    text-align: center;
+    font-size: large;
+    background-color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0,2);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-footerabout:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.25);
+}
+
+
+.bg-ofabout{
+  background-color: #a57938;
+}
+
+.container-footerabout:hover { 
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.text-abme{
+  font-family: georgia,serif;
+}
+
+.buttontonext { 
+  width: 80px ;
+  height: 37px;
+  box-shadow: 0px 12px 25px rgba(0,0,0,0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* for progression bars.  */
+
+.progress-bar {
+  position: absolute;
+  top: 20px;           
+  left: 20px;
+  right: 20px;
+
+
+  display: flex;
+  gap: 10px;
+}
+
+
+
+.progress-box {
+  width: 100px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  transition: background-color 0.4s ease;
+}
+
+
+.container-tostart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 180px;
+  margin-left: 250px;
+  height: 320px;
+  width: 480px;
+  -webkit-box-shadow: 5px 7px 17px -4px #3B3B3B; 
+  box-shadow: 5px 7px 17px -4px #4d4b3b;
+  background-color: #ff9800;
+  border-radius: 22px;
+  position: relative;
+}
+
+/* start animation */
+.intro-anim {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: introFade 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+@keyframes introFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Confettis */
+#confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  opacity: 0.8;
+  animation: fall 1.2s linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* input-data */
+.data-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 180px;
+  margin-left: 250px;
+  height: 320px;
+  width: 480px;
+  -webkit-box-shadow: 5px 7px 17px -4px #3B3B3B; 
+  box-shadow: 5px 7px 17px -4px #4d4b3b;
+  background: linear-gradient(135deg, #FFB703, #F59E0B);
+  border-radius: 22px;
+  position: relative;
+  outline-style: inset;
+  outline-color: black;
+  outline-width: thin;
+}
+
+
+.input-box {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1.5px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.25s ease;
+  margin-top: 138px;
+}
+
+/* placeholder style */
+.input-box::placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* focus effect */
+.input-box:focus {
+  border-color: #ff8a00;
+  box-shadow: 0 0 0 3px rgba(255, 138, 0, 0.15);
+}
+
+
+
+.feedbacks-container {
+    width: 60%;
+    max-width: 800;
+    padding: 20px; 
+    margin: 40px auto;
+    text-align: center;
+    font-size: large;
+    background-color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0,2);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    
+}
+
+
+
+/* INPUT BAR */
+.input-FBS {
+    flex: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    padding: 10px 4px;
+    font-size: 15px;
+    color: black;
+    outline: none;
+    transition: border-color 0.25s ease;
+}
+
+.input-FBS::placeholder {
+    color: black;
+    font-weight: 400;
+}
+
+/* effect pas diklik */
+.input-FBS:focus {
+    border-bottom: 1px solid #ffffff;
+}
+
+
+
+
+/* ALTERNATIVES DONT KNOW YET WHICH THIS SHIT IS FOR. */
+/* container of the footer for the question */
+/* .container-footerquest{
+    width:68%;
+    max-height: 80%;
+    height: 75%;
+    padding: 10px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: large;
+    background-color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 2);
+    border-radius: 15px;
+
+} */
+
+ /* BUTTON 34 FOR INPUT BTN */
+ 
+.btn-34,
+.btn-34 *,
+.btn-34 :after,
+.btn-34 :before,
+.btn-34:after,
+.btn-34:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-34 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-34:disabled {
+  cursor: default;
+}
+.btn-34:-moz-focusring {
+  outline: auto;
+}
+.btn-34 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-34 [hidden] {
+  display: none;
+}
+.btn-34 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-34:hover {
+  transform: scale(1.1);
+}
+.btn-34 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-34:before {
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s;
+  width: 0;
+}
+.btn-34:hover:before {
+  width: 100%;
+}
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
