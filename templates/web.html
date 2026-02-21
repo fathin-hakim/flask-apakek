@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confidence when Talking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class = "intro-anim">
+    <!-- NAVIGATION BAR-->
+    <nav class="container-navbar" id="nav">
+        <div class="container-fluid">
+            <li class="navbar-brand">Personal Project IB 25</li>
+            <ul class="ul-navbar">
+                <li class="li-navbar"><a href="/" class="navtext-style">HOME</a></li>
+                <li class="li-navbar">
+                    <a href="/about" class="navtext-style">ABOUT & FEEDBACKS</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="/quest" class="navtext-style">QUIZ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVIGATION BAR SELESAI -->
+    <div>
+    </div>
+    <!-- GAMBAR -->
+    <div class="container-CONTENT1">
+       <img src="{{ url_for('static', filename='freepik_assistant_1757058248134.png') }}">
+
+    </div>
+    <!-- TABLE OF CONTENTS. -->
+    <div class="container-TOCM">
+        <ul class="container-TOC">
+            <details id="TOC" class="Container-HideToc">
+                <summary class="font-HeadToc"><b>Table Of Contents</b></summary>
+                <li class="containerk-toc">
+                    <a href="#intro">1. Definition Of Public Speaking</a>
+                </li>
+                <li class="containerk-toc"><a href="#overcoming">2. Overcoming the fear & Building Confidence
+                    </a></li>
+                <li class="containerk-toc"><a href="#Tips">3. Tips and Improvements.</a></li>
+        </ul>
+        </details>
+    </div>
+    <!-- CONTENT 1 FOOTER (1st text box : introduction. Whats public speaking? ) -->
+    <div class="container-footer">
+        <h2 id="intro">What is public speaking?</h2>
+        <p class="container-text" style="margin-bottom: 30px;">Public speaking is an activity where a person talks in
+            front of an audience.
+            This connects to 4 of the main goals of public speaking.
+            The first one is to inform someone about something. Public speaking is definitely to inform the audience
+            that you want to share some information.
+            The second one is to convince the audience of something. For example, if you’re doing some marketing
+            presentation, you will convince the audience to buy the product.
+            You will share the pros and cons of your product, and convince the audience to buy them.
+            The third one is to entertain the audience, for example, like an MC, they will try to entertain the
+            audience, while actually trying to also inform the audience and share something to the audience.
+            and the last one, is to inspirate the audience. The mc will inspirate the audience, and so with that, the
+            audience get some knowledge and will to be the better version of themselves.
+        </p>
+    </div>
+
+
+    <!-- CONTENT 2 footer & image. please make class another for the img. -->
+    <div class="container-CONTENT">
+      <img src="{{ url_for('static', filename='freepikpub2.png') }}" class="IMAGE2">
+    </div>
+    <!-- ISI TEKS CONTENT 2 -->
+    <div class="container-footer">
+        <h2 id="overcoming">Overcoming the fear & Building Confidence</h2>
+        <p class="container-text" style="margin-bottom: 15px;">Everyone feels nervous about speaking in public, and it
+            is a very common
+            challenge.
+            With the right mindset and consistent practice, this fear can be overcome. Believing in your ability to
+            improve is the first step,
+            because public speaking is a valuable skill that many people will need in their future careers.
+            Well, to overcome it, there's a way that you can do. Like, know your material to share, and understand
+            your
+            audience.
+            try to focus that the goal when public speaking is to share some information, not searching for a
+            mistake.
+            People can say that you've been scared of public speaking since you were born, but if you let it slide,
+            then, will it just go away?
+            Instead, you will be the same. You will be in an endless cycle, where you won't be improving.
+            To build confidence, you could do some exercise like talking in front of your mirror, and write some
+            mini
+            speeches.
+            Honestly, there's many ways to be better and overcome fear. But in the end, it will be back to all of
+            us.
+            Will we have the willingness to overcome the fear? or just remain the same?
+        </p>
+        <!-- Content 3 footer -->
+        <h2 id="Tips">Audience Engagement</h2>
+        <p class="container-text" style="margin-bottom:  15px;">
+            since we have already talked about overcoming fear and building confidence, now lets talk about audience
+            engagement.
+            Connecting with your audience is just as important as the words you say. Effective public speakers build
+            engagement by making eye contact, using gestures,
+            and showing genuine interest in their listeners. Asking questions, sharing relatable examples, or using
+            a
+            touch of humor can make the audience feel involved.
+            When people feel connected, they are more likely to listen attentively and remember your message.
+        </p>
+        <h2>Voice Control & Clarity</h2>
+        <p class="container-text" style="margin-bottom: 15px;">
+            Once you have their attention, your voice becomes your greatest tool. A strong, clear voice makes your
+            message impossible to ignore.
+            Learn to control your breathing, vary your tone, and speak at a steady pace so that every word lands
+            with
+            impact.
+            Clarity is not about using complicated words, but about making your ideas simple and easy to understand.
+            With control and precision, your voice can carry confidence.
+        </p>
+        <h2 style="margin-bottom: 20px;">Mistakes to avoid & Tips</h2>
+        <p class=" container-text">Even with preparation, many speakers fall into habits that weaken their presence.
+            Speaking too fast,
+            filling
+            every pause with “um,”
+            or avoiding eye contact can instantly break the connection you’ve worked so hard to build.
+            Overloading slides or relying too much on notes can also make your delivery less engaging.
+            Remember this. Mistakes happen, but the real mistake is not learning from them.
+            By being aware and practicing consistently, you can step on stage with confidence and leave a lasting
+            impression.
+        </p>
+    </div>
+    <!-- CONTENT 3 OR INTERACTIVE, REFLECTIVE QUESTIONS -->
+    <div class="container-quiz" id="refque">
+        <b class="container-b">REFLECTIVE QUIZ</b>
+        <ul>
+            <button class="btn-2" id="btn-2"><span>START QUIZ</span></button></button>
+            <script src="{{ url_for('static', filename='btn.js')}}"></script>
+        </ul>
+        
+    </div>
+
+
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Confidence when Talking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body class="container-questhtml" id="body">
+    <!-- NAVIGATION BAR-->
+    <nav class="container-navbar" id="nav">
+        <div class="container-fluid">
+            <li class="navbar-brand">Personal Project IB 25</li>
+            <ul class="ul-navbar">
+                <li class="li-navbar"><a href="/" class="navtext-style">HOME</a></li>
+                <li class="li-navbar">
+                    <a href="/about" class="navtext-style">ABOUT & FEEDBACKS</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="/quest" class="navtext-style">QUIZ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- pop up of quiz (to-start), and the begin of database. -->
+    <div class="container-tostart intro-anim" id="start-quiz">
+        <button class="btn-65" id="button-start">START</button>
+    </div>
+
+    <div class="data-input" id="data-input" style="display:none">
+        <form method="POST" action="/submit">
+            <input class="input-box" type="text" name="name" placeholder="Insert Name" required>
+            <button class="btn-34" id="data-input1" type="submit"><span>SUBMIT</span></button>
+        </form>
+    </div>
+    <!-- global progression.bar -->
+    <div class="progress-bar">
+        <div class="progress-box" id="p1"></div>
+        <div class="progress-box" id="p2"></div>
+        <div class="progress-box" id="p3"></div>
+        <div class="progress-box" id="p4"></div>
+    </div>
+
+
+    <div class="quiz-container">
+
+
+        <!-- STRUCTURE OF q.n (asked) and it will be asked till the down.  -->
+        <div class="container-questquiz" id="quiz-1" style="display: none">
+            <b class="footer-q">QUIZ 1</b>
+            <h3 class="footer-q" id="footer-q">how to out come fear?</h3>
+            <div class="positionb-q1">
+                <form method="POST" action="/answer">
+                    <button class="btn-65" id="btnc-1" name="answer" value="A">hello world</button>
+                    <!-- for button num  1 , that is correct,-->
+                    <button class="btn-65" id="btnf-1" name="answer" value="B">hello world</button>
+                    <!-- for button num 2  , that is wrong,-->
+                </form>
+            </div>
+        </div>
+        <!-- DI BAWAH INI AKAN DI STYLE DISPLAY HIDE!! java buat munculkan si quiz' ini. -->
+        <!-- q2 -->
+        <div class="container-questquiz" id="quiz-2" style="display : none">
+            <b class="footer-q">QUIZ 2</b>
+            <h3 class="footer-q">how do we (content)</h3>
+            <div class="positionb-q1"></div>
+            <form method="POST" action="/answer">
+                <button class="btn-65" id="btnc-2" name="answer" value="A">hello world</button>
+                <!-- for button num  1 , that is correct,-->
+                <button class="btn-65" id="btnf-2" name="answer" value="B">hello world</button>
+                <!-- for button num 2  , that is wrong,-->
+            </form>
+        </div>
+    </div>
+    <!-- q3 -->
+    <div class="container-questquiz" id="quiz-3" style="display: none;">
+        <b class="footer-mq">wolrd</b>
+        <h3 class="footer-q">hello world</h3>
+        <div class="positionb-q1"></div>
+        <form method="POST" action="/answer">
+            <button class="btn-65" id="btnc-3" name="answer" value="A">hello world</button>
+            <!-- for button num  1 , that is correct,-->
+            <button class="btn-65" id="btnf-3" name="answer" value="B">hello world</button>
+            <!-- for button num 2  , that is wrong,-->
+        </form>
+    </div>
+    </div>
+    <!-- q4 -->
+    <div class="container-questquiz" id="quiz-4" style="display: none;">
+        <!-- for the progression bars. -->
+        <div class="progress-bar">
+            <b class="footer-mq">dwa</b>
+            <h3 class="footer-q">awd</h3>
+            <div class="positionb-q1">
+                <form method="POST" action="/answer">
+                    <button class="btn-65" id="btnc-4" name="answer" value="A">hello world</button>
+                    <!-- for button num  1 , that is correct,-->
+                    <button class="btn-65" id="btnf-4" name="answer" value="B">hello world</button>
+                    <!-- for button num 2  , that is wrong,-->
+                </form>
+            </div>
+        </div>
+        <!--  for the button next page or nah boyo-->
+        <div class="button-Submit" id="button-Submit" style="display: none;">
+            <form method="POST" action="/finish">
+                <button class="Submit" type="submit">FINISH</button>
+            </form>
+        </div>
+    </div>
+        <!-- For HTML Leaderboard -->
+    <!-- <div class = "leaderboard">
+        <b>LEADERBOARD!!!</b>
+        <p class = "position-nuh"></p>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="{{ url_for('static', filename='loopquests.js')}}"></script>
+    <div class="container-confetti" id="confetti"></div>
+</body>
+
+</html>

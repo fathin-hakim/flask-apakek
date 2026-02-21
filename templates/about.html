@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Confidence when Talking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="bg-ofabout">
+    <!-- navbar -->
+    <nav class="container-navbar" id="nav">
+        <div class="container-fluid">
+            <li class="navbar-brand"></li>
+            <ul class="ul-navbar">
+                <li class="li-navbar"><a href="/" class="navtext-style">HOME</a></li>
+                <li class="li-navbar">
+                    <a href="/about" class="navtext-style">ABOUT & FEEDBACKS</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="/quest" class="navtext-style">QUIZ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- perkenalan diri, serta nama saya dll -->
+    <div class="container-footerabout">
+        <h2 class="text-intromyab">About me</h2>
+        <p class="text-abme">Hi! My name is Fathin Hakim Wahyudianto, but you can simply call me Fathin. I’m a
+            10th-grade student at Nassa School, which uses the IB curriculum. I’m a self-taught programmer because I
+            believe our world is built and shaped by technology. Through my personal project, I created this website and
+            learned a lot about programming—from understanding languages and algorithms to developing computational
+            thinking.</p>
+    </div>
+
+    <div class="container-footerabout">
+        <h2 class="text-intromyab">my goal</h2>
+        <p class="text-abme">so, as my personal project bases on the information technology, 
+            therefore my goal is to understand the basic of programming languages, whether for it's front-end or back-end.
+        </p>
+    </div>
+
+    <div class="container-footerabout">
+        <h2 class="text-intromyab">purpose of this website.</h2>
+        <p class="text-abme">The purpose of this website, is to show off the object 
+            that im working on during this IB personal project of 2025. The public speaking content inside 
+            this website is just as it's Content to fill inside the website. 
+        </p>
+    </div>
+
+
+
+    <div class="feedbacks-container" id="feedback-1">
+        <B> UPLOAD YOUR FEEDBACKS ABOUT ME TWIN</B>
+        <form method="POST" action="/feedback">
+            <input class="input-FBS" name="comment" placeholder="Insert Your Feedbacks for me gng">
+            <button class="btn-34" id="button-fbs">SBUMIT BOYY</button>
+        </form>
+    </div>
+
+    <div class="feedback-list">
+    {% for fb in feedbacks %}
+        <div class="feedback-item">
+            <p><b>{{ fb.username }}</b></p>
+            <p>{{ fb.message }}</p>
+            <small>{{ fb.created_at }}</small>
+            <hr>
+        </div>
+    {% endfor %}
+</div>
+
+
+</body>
+
+</html>
